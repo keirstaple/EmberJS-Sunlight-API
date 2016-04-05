@@ -1,1 +1,7 @@
+<ul>
+  {{#each model as |bill|}}
+  <li><a href= {{bill.urls.congress}}>{{bill.official_title}}</a><br>Sponsor: {{bill.sponsor.title}} {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</li>
+  {{/each}}
+</ul>
+
 {{lookup-form zipLookup="zipLookup"}}
