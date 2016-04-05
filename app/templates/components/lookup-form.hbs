@@ -1,1 +1,8 @@
-{{yield}}
+<form>
+  <div class="form-group">
+    <label for="zip">Zip</label>
+    {{input value=zip id="zip"}}
+  </div>
+
+  <button {{action 'zipLookup'}}>Submit</button>
+</form>
