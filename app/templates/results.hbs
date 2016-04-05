@@ -1,1 +1,5 @@
-{{outlet}}
+<ul>
+  {{#each model as |legistlator|}}
+    <li>{{legislator.first_name}} {{legistlator.last_name}}<br> Contact: <a href= {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+  {{/each}}
+</ul>
