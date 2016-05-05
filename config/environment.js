@@ -40,8 +40,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
-  }
+  ENV.baseURL = '/EmberJS-Sunlight-API/dist';
+  ENV.locationType = 'hash';
+}
 
   return ENV;
 };
